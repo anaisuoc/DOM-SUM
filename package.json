@@ -1,7 +1,7 @@
 {
-  "name": "proyecto",
+  "name": "dom-sum",
   "version": "1.0.0",
-  "description": "proyecto de prueba",
+  "description": "Portal de gastronomía tailandesa",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {

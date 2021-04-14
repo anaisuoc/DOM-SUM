@@ -39,6 +39,7 @@ form.addEventListener('submit', evt =>{
 		warningemail += `El formato de email que se ha introducido es incorrecto.`;
 		getin = true;
 	}
+	
 	if(message.value.length <=5 || message.value.length >=250){
 		warningmessage += `El mensaje debe tener entre 5 y 250 caracteres.`
 		getin = true;
