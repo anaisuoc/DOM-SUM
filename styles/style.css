@@ -317,14 +317,14 @@ nav ul li a:active{
  margin-bottom: 9%;
 }
 
-.card-link a:hover{
+.card-link:hover{
   background-color: rgba(160,160,160,0.3);
   transition: all .2s ease-in-out;
   opacity: 1;
   border: 0;
 }
 
-.card-link a:active{
+.card-link:active{
   background-color: white;
   color: rgb(25,25,25);
   -webkit-text-stroke: 0.5px rgb(25,25,25);
