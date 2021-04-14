@@ -59,7 +59,7 @@ nav ul li{
 
 nav ul li a{
   color: white;
-  opacity: 50%;
+  opacity: 50;
   font-size: 0.88rem;
   padding: 6px 10px;
   border-radius: 3px;
@@ -68,13 +68,13 @@ nav ul li a{
 }
 
 .activo{
-  opacity: 100%;
+  opacity: 100;
 }
 
 nav ul li a:hover{
   background-color: rgba(160,160,160,0.3);
   transition: all .2s ease-in-out;
-  opacity: 100%;
+  opacity: 100;
 }
 
 nav ul li a:active{
