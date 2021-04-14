@@ -43,7 +43,7 @@ nav a img{
 }
 
 nav a img:hover{
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 nav ul{
@@ -59,7 +59,7 @@ nav ul li{
 
 nav ul li a{
   color: white;
-  opacity: 50%;
+  opacity: 0.5;
   font-size: 0.88rem;
   padding: 6px 10px;
   border-radius: 3px;
@@ -68,16 +68,16 @@ nav ul li a{
 }
 
 .activo{
-  opacity: 100%;
+  opacity: 1;
 }
 
-a:hover{
+nav ul li a:hover{
   background-color: rgba(160,160,160,0.3);
   transition: all .2s ease-in-out;
-  opacity: 100%;
+  opacity: 1;
 }
 
-a:active{
+nav ul li a:active{
   background-color:white;
   color: rgb(25,25,25);
 }
@@ -152,7 +152,7 @@ a:active{
 
   nav ul li a{
     font-size: 1rem;
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -313,14 +313,14 @@ a:active{
  text-transform: uppercase;
  transition: all .3s ease-in-out;
  background-color: black;
- opacity: 90%;
+ opacity: 0.9;
  margin-bottom: 9%;
 }
 
 .card-link a:hover{
   background-color: rgba(160,160,160,0.3);
   transition: all .2s ease-in-out;
-  opacity: 100%;
+  opacity: 1;
   border: 0;
 }
 
@@ -620,6 +620,10 @@ a:active{
     padding-bottom: 0;
   }
 
+  .container-flex-recipe h1,
+  .recomendations-recipe h1{
+    font-size: 1.2rem;
+  }
   .preparation-process{
     padding-bottom: 7%;
   }
@@ -641,6 +645,7 @@ a:active{
     width: 40vw;
     height: 330px;
   }
+
 
 }
 
@@ -860,11 +865,11 @@ textarea {
 }
 
 #button-send:hover {
-  opacity:80%;
+  opacity:0.8;
 }
 
 #button-send:active {
-  opacity:100%;
+  opacity:1;
   color:black;
   background-color: white;
   -webkit-text-stroke: 0.5px black;
