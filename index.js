@@ -1,3 +1,9 @@
+/*Hora en Bangkok*/
+import moment from 'moment-timezone';
+
+let date = moment();
+date.tz('Asia/Bangkok');
+document.getElementById('hora-bangkok').innerHTML = date.format('LT');
 
 /*menu responsive*/
 const hamburguer = document.querySelector('.menu-ham');
@@ -31,17 +37,17 @@ form.addEventListener('submit', evt =>{
 	errormessage.innerHTML = '';
 
 	if(name.value.length <=2 || name.value.length >=40){
-		warningname += `El nombre debe tener entre 2 y 40 caracteres.`;
+		warningname += 'El nombre debe tener entre 2 y 40 caracteres.';
 		getin = true;
 	}
 
 	if(!regexpEmail.test(email.value)){
-		warningemail += `El formato de email que se ha introducido es incorrecto.`;
+		warningemail += 'El formato de email que se ha introducido es incorrecto.';
 		getin = true;
 	}
 	
 	if(message.value.length <=5 || message.value.length >=250){
-		warningmessage += `El mensaje debe tener entre 5 y 250 caracteres.`
+		warningmessage += 'El mensaje debe tener entre 5 y 250 caracteres.';
 		getin = true;
 	}
 
