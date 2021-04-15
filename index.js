@@ -1,19 +1,20 @@
+/*Hora en Bangkok*/
 import moment from 'moment-timezone';
+let date = moment();
+date.tz('Asia/Bangkok');
+document.getElementById('hora-bangkok').innerHTML = date.format('LT');
 
 /*menu responsive*/
 const hamburguer = document.querySelector('.menu-ham');
 const links = document.querySelector('ul');
 const bars = document.querySelectorAll('.menu-ham span');
 
-hamburguer.addEventListener('click', () => {
+hamburguer.addEventListener('click', function(){
 	links.classList.toggle('show');
-	bars.forEach(child => {child.classList.toggle('animation')});
+	bars.forEach(function(child){
+		child.classList.toggle('animation');
+	});
 });
-
-/*Hora en Bangkok*/
-let date = moment();
-date.tz('Asia/Bangkok');
-document.getElementById('hora-bangkok').innerHTML = date.format('LT');
 
 /*validación de formulario*/
 const form = document.getElementById('form');
@@ -24,7 +25,7 @@ const errorname = document.getElementById('warning-name');
 const erroremail = document.getElementById('warning-email');
 const errormessage = document.getElementById('warning-message');
 
-form.addEventListener('submit', evt =>{
+form.addEventListener('submit', function(evt){
 	evt.preventDefault();
 	let warningname = '';
 	let warningemail = '';
@@ -57,5 +58,3 @@ form.addEventListener('submit', evt =>{
 		errormessage.innerHTML = warningmessage;
 	}
 });
-
-
