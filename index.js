@@ -1,8 +1,4 @@
-/*Hora en Bangkok*/
 import moment from 'moment-timezone';
-let date = moment();
-date.tz('Asia/Bangkok');
-document.getElementById('hora-bangkok').innerHTML = date.format('LT');
 
 /*menu responsive*/
 const hamburguer = document.querySelector('.menu-ham');
@@ -15,6 +11,11 @@ hamburguer.addEventListener('click', function(){
 		child.classList.toggle('animation');
 	});
 });
+
+/*Hora en Bangkok*/
+let date = moment();
+date.tz('Asia/Bangkok');
+document.getElementById('hora-bangkok').innerHTML = date.format('LT');
 
 /*validación de formulario*/
 const form = document.getElementById('form');
