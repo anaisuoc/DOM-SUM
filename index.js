@@ -1,4 +1,4 @@
-//import moment from 'moment-timezone';
+import moment from 'moment-timezone';
 
 /*menu responsive*/
 const hamburguer = document.querySelector('.menu-ham');

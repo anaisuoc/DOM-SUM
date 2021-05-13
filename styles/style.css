@@ -1102,6 +1102,9 @@ nav ul li a:active{
 .photo-form{
   display: flex;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-us-photo > div,
@@ -1413,9 +1416,10 @@ textarea {
 }
 
 @media (max-width: 780px){
-  
+
   .about-us-photo{
     padding:30%;
+    flex: none;
   }
 
   .moment{
@@ -1511,6 +1515,50 @@ textarea {
   .container-people > div{
     margin-bottom: 5%;
   }
+}
+
+@media
+(max-width: 780px) and (-webkit-min-device-pixel-ratio: 1)
+{
+  .about-us-photo {
+    background-image: url(../img/sobre-nosotros-780.jpg);
+  }
+}
+
+@media
+(max-width: 780px) and (-webkit-min-device-pixel-ratio: 2)
+{
+  .about-us-photo {
+    background-image: url(../img/sobre-nosotros-780-x2.jpg);
+  }
+}
+
+@media
+(min-width: 780px) and (-webkit-min-device-pixel-ratio: 1)
+{
+    .about-us-photo {
+        background-image: url(../img/sobre-nosotros-840.jpg);
+    }
+}
+
+@media
+(min-width: 780px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .about-us-photo {
+        background-image: url(../img/sobre-nosotros-840-x2.jpg);
+    }
+}
+
+.photo-form {
+    background-image: url(../img/contacto-840.jpg);
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2)
+{
+    .photo-form {
+        background-image: url(../img/contacto-840-x2.jpg);
+    }
 }
 
 /* main documentacion */
@@ -1790,43 +1838,4 @@ footer > div{
 
 
 
-/*
 
-
-
-
-
-.about-us-photo,
-.photo-form{
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.about-us-photo {
-  background-image: image-set(
-    url(../img/sobre-nosotros-840.jpg) 1x,
-    url(../img/sobre-nosotros-840-2x.jpg) 2x
-    );
-}
-
-
-@media (max-width: 780px){
-  .about-us-photo {
-    background-image: image-set(
-      url(../img/sobre-nosotros-780.jpg) 1x,
-      url(../img/sobre-nosotros-780-x2.jpg) 2x
-      );
-  }
-}
-
-
-@media (min-width: 780px){
-  .photo-form {
-    background-image: image-set(
-      url(../img/contacto-840.jpg) 1x,
-      url(../img/contacto-840-2x.jpg) 2x
-      );
-  }
-}
-*/
