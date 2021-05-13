@@ -1,4 +1,4 @@
-import moment from 'moment-timezone';
+//import moment from 'moment-timezone';
 
 /*menu responsive*/
 const hamburguer = document.querySelector('.menu-ham');
@@ -12,10 +12,19 @@ hamburguer.addEventListener('click', function(){
 	});
 });
 
-/*Hora en Bangkok*/
+
+/*slider*/
+let box = document.querySelectorAll('.box-clip-path');
+box.forEach( function(popup){ popup.addEventListener('click', function(){
+	popup.classList.toggle('active');
+	});
+});
+
+/*hora en Bangkok*/
 let date = moment();
 date.tz('Asia/Bangkok');
 document.getElementById('hora-bangkok').innerHTML = date.format('LT');
+
 
 /*validación de formulario*/
 const form = document.getElementById('form');
@@ -33,7 +42,6 @@ form.addEventListener('submit', function(evt){
 	let warningmessage = '';
 	let getin = false;
 	let regexpEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-
 	errorname.innerHTML = '';
 	erroremail.innerHTML = '';
 	errormessage.innerHTML = '';
