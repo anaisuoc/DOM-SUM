@@ -4,14 +4,9 @@
   text-decoration: none;
 }
 
-body {
+body{
   font: 400 15px/1.5 'Open sans', sans-serif;
   background-color: black;
-}
-
-.body-index {
-  background: url(../img/background-index.jpg) no-repeat center center fixed;
-  background-size: cover;
 }
 
 .body-white{
@@ -22,27 +17,50 @@ body {
 nav{
   background: rgb(25,25,25);
   height: 66px;
-  width:  100vw;   
+  width: 100vw;   
   position: fixed; 
-  z-index: 1;  
+  z-index: 2000;  
 }
 
-.body-index nav{  
-  position: relative;   
+header{ 
+  z-index: 2000; 
 }
 
 /* Logotipo */
-nav a img{
-  color: white;
-  height: 27px;
+nav a div{
   position: absolute;
   top: 0;
   bottom: 0;
   left: 5%;
   margin: auto;
+  color: white;
+  height: 27px;
+  transition: all .1s ease-in;
 }
 
-nav a img:hover{
+nav a img{
+  height: 27px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+nav a .logo-reduce{
+  display: none;
+}
+
+nav a div p{
+  font-size: 1.1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a div p::before{
+  content: "|";
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+nav a div:hover{
   opacity: 0.5;
 }
 
@@ -65,6 +83,8 @@ nav ul li a{
   border-radius: 3px;
   border: 1px solid transparent;
   text-transform: uppercase;
+  transition: all .2s ease-in-out;
+
 }
 
 .activo{
@@ -73,7 +93,6 @@ nav ul li a{
 
 nav ul li a:hover{
   background-color: rgba(160,160,160,0.3);
-  transition: all .2s ease-in-out;
   opacity: 1;
 }
 
@@ -88,6 +107,7 @@ nav ul li a:active{
   background-color: transparent;
   cursor: pointer;
   border: none;
+
 }
 
 .menu-ham span{
@@ -102,22 +122,25 @@ nav ul li a:active{
 /* Animaciones menú responsive */
 .br-1.animation{
   transform: rotate(-45deg) translate(-5px, 7.8px);
+  transition: 0.4s;
 }
 
 .br-2.animation{
-  opacity: 0;
+  opacity: 0; 
+
 }
 .br-3.animation{
   transform: rotate(45deg) translate(-5px, -7.8px);
+  transition: 0.4s;
 }
 
 /* media queries header*/
 @media (max-width: 992px){
+
   .menu-ham{
     display: block;
     position: absolute;
     right: 5.5%;
-    transition: 0.2s 0.1s; 
     top: 0;
     bottom: 0;
     margin: auto; 
@@ -127,22 +150,22 @@ nav ul li a:active{
     left: 5.5%;
   }
 
-  nav ul {
-   position: fixed;
-   width: 100%;
-   height: 100vh;
-   top: 66px;
-   left: -100%;
-   text-align: center;
-   transition: all .5s;
-   background-color: rgba(25,25,25,0.95);
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 66px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    background-color: rgba(25,25,25,0.95);
   }
 
   nav ul.show{
     left: 0;
   }
 
-  nav ul li {
+  nav ul li{
     display: block;
     margin: 40px 0;
     line-height: 2rem;
@@ -156,20 +179,26 @@ nav ul li a:active{
   }
 }
 
+@media (max-width: 576px){
+
+  nav a .logo-reduce {
+    display: inline;
+  }
+}
 
 /*main index*/
-.main-index {
-  height: calc(100vh - 66px);
+.logo-index{
+  position:relative;
+  height:100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-index div {
+.logo-index div {
   max-width: 46%;
   max-height: 30%;
-  background-color: rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,88 +206,345 @@ nav ul li a:active{
   border-radius: 4px;
   color:white;
   padding: 7%;
+  position: absolute;
+  margin-top: 66px;  
+  animation: logo-index-anim 1s ease-in-out 0s 1 forwards;
 }
 
-.main-index div img{
+@keyframes logo-index-anim{
+  from{
+    padding-top: 4%; 
+    opacity: 0;
+    background-color: rgba(25, 25, 25,0.6);
+  }
+  to{
+    padding-top: 7%; 
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+
+.logo-index div img{
   width: 450px; 
   margin: 7%;
 }
 
-.main-index div h1 {
+.logo-index div h1 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
-.main-index div a{
- color: white;
- font-weight: 300;
- font-size: 1.2rem;
- padding: 9px 11px;
- text-transform: uppercase;
- border-radius: 4px;
- transition: all .2s ease-in-out;
- margin-top: 8%;
- margin-bottom: 3%;
- background-color: rgba(160,160,160,0.3);
- border: 0;
+.logo-index div a{
+  color: white;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 9px 11px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  background-color: rgba(160,160,160,0.3);
 } 
 
-.main-index div a:hover{
+.logo-index div a:hover {
   background-color: rgba(160,160,160,0.6);
-  color: #F8F8F8;  
+  color: #F8F8F8;
+  transform: translateY(-1px);
 }
 
-.main-index div a:active{
+.logo-index div a:active{
   background-color: white;
   color: rgb(30,30,30);
-  -webkit-text-stroke: 1px rgb(30,30,30);
+  font-weight: 600;
+}
+
+.background-index img{
+  object-fit: cover;
+  width: 100vw;
+  height:100vh;
+}
+
+.container-clip-path .box-clip-path{
+  background-color: black;
+}
+
+.container-clip-path .tittle-clip-path{
+  color: white;
+}
+
+.container-clip-path .tittle-clip-path h2{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: initial;
+  line-height: 4rem;
+}
+
+.meet-us-index{ 
+  position: relative;
+  background: rgb(25,25,25);
+  padding-top: 1%;
+}
+
+.meet-us-index a{
+  color: white;
+  padding: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: absolute;
+  background-color: rgba(0,0,0,1);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align:center;
+  transition: all .2s ease-in-out;
+}
+
+.meet-us-index a h2{
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.meet-us-index a:hover{
+  background-color: rgba(25,25,25,0.9);
+  transform: translate(-50%, -51%);
+}
+
+.meet-us-index a:active{
+  background-color: white;
+  color: rgb(25,25,25);
+  font-weight: 600;
+}
+
+.meet-us-index img{
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* media queries main index*/
 @media (max-width: 992px){
-  .main-index div {
+  .logo-index div {
     min-width: 65%;
     min-height: 45%;
   }
 
-  .main-index div img{
+  .logo-index div img{
     width: 390px; 
     margin-bottom: 7%;
     margin-top: 10%;
     margin: 6%;
   } 
 
-  .main-index div h1 {
+  .logo-index div h1 {
     font-size: 1.4rem;
     margin: 2%;
   }
 
-  .main-index div a{
+  .logo-index div a{
     margin-top: 6%;
     margin-bottom: 9%;
+  }
+
+  .meet-us-index{ 
+    padding-top:1.75%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 780px){
+
+  .container-clip-path .tittle-clip-path h2{
+    font-size: 1rem;
+  }
+  .container-clip-path .content-box-clip-path{
+    max-width: 50vw;
+  }
+}
+
+@media (min-width: 780px){
+
+  .container-clip-path{
+    height:85vh;
+  }
+
+  .container-clip-path .box-clip-path{
+    position: absolute;
+    height: 85vh;
+    cursor:pointer;
+    transition: all .3s ease-in-out;
+  }
+
+  .container-clip-path .box-clip-path:nth-child(1) {
+    clip-path: polygon(0 0, 33% 0, 33% 100%, 0% 100%);
+  }
+
+  .container-clip-path .box-clip-path:nth-child(2) {
+    clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
+  }
+
+  .container-clip-path .box-clip-path:nth-child(3) {
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
+  }
+
+  .container-clip-path .box-clip-path:hover {
+    z-index: 1;
+  }
+
+  .container-clip-path .box-clip-path.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .container-clip-path .box-clip-path:nth-child(1) .tittle-clip-path,
+  .container-clip-path .box-clip-path:nth-child(3) .tittle-clip-path{
+    width: 33vw;
+  }
+
+  .container-clip-path .box-clip-path:nth-child(1) .tittle-clip-path{
+    padding-left: 0;
+  }
+
+  .container-clip-path .box-clip-path:nth-child(3) .tittle-clip-path{
+    padding-right: 0;
+    float: right;
+  }
+
+  .container-clip-path .box-clip-path picture,
+  .container-clip-path .box-clip-path img{
+    width: 100vw;  
+    height:100%;
+    object-fit: cover;
   } 
+
+  .container-clip-path .box-clip-path:hover picture{
+    opacity: 0.75;
+  }
+
+  .container-clip-path .content-box-clip-path{
+    padding: 2% 2% 2% 5%;
+    margin: 2% 2% 3% 0%;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    background-color: rgba(0,0,0,0.8);
+    bottom:0;
+    position: absolute;
+    border-radius: 4px;
+    color: white;
+    max-width: 33vw;
+  }
+
+  .container-clip-path .box-clip-path.active .content-box-clip-path{
+    opacity:1;
+  }
+
+  .container-clip-path .content-box-clip-path .fas{
+    display: flex;
+    display: inline;
+    margin-right: 1%;
+  }
+
+  .container-clip-path .content-box-clip-path p{
+    margin-top: 2%;
+    display: inline;
+  }
+
+  .container-clip-path .content-box-clip-path p:last-child{
+    display: block;
+  }
 
 }
 
+@media (max-width: 780px){
+
+  .container-clip-path{
+    height:75vh;
+  }
+
+  .container-clip-path > div{
+    display:flex;
+    padding:0;
+    width:300%;
+  }
+
+  .container-clip-path img{
+    width: 100vw; 
+    height: 75vh;
+    object-fit: cover; 
+  } 
+
+  .container-clip-path > div{
+    animation: container-path-anim 16s ease-in-out infinite;
+  }
+
+  @keyframes container-path-anim{
+    0% {margin-left: 0;}
+    23% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    48% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    73% {margin-left: -200%;}
+    75% {margin-left: -100%;}
+    98% {margin-left: -100%;}
+    100% {margin-left: 0;}
+  }
+
+  .meet-us-index{ 
+    padding-top:2.75%;
+  }
+
+  .meet-us-index a{
+    padding: 20px;
+  }
+  .meet-us-index a h2{
+    font-size: 1rem;
+  }
+} 
+
 @media (max-width: 576px){
-  .main-index div {
+
+  nav a .logo{
+    display:none;
+  }
+
+  .logo-reduce{
+   display:inline;
+  }
+
+  nav a img {
+    height: 25px;
+  }
+
+  nav a div p{
+    font-size: 1.1rem;
+    padding-left: 7px;
+  }
+
+  nav a div p::before {
+    content: "|";
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .logo-index div {
     min-width: 75%;
   }
 
-  .main-index div img{
-   width: 300px; 
-   margin: 7%;
+  .logo-index div img{
+    width: 92%; 
+    margin: 7%;
   } 
 
-  .main-index div h1 {
-  font-size: 1.3rem;
+  .logo-index div h1 {
+    font-size: 1.3rem;
   }
 
-  .main-index div a{
-  margin-top: 8%;
+  .logo-index div a{
+    margin-top: 8%;
   }
 
+  .container-clip-path{
+    height:80vh;
+  }
 }
 
 
@@ -276,12 +562,25 @@ nav ul li a:active{
 
 .card-recipe{
   border-radius: 4px;
-  margin-top: 6%;
   text-align: center;
-  transition: all 0.25s;
   color: white; 
   background-color: rgb(25, 25, 25);
   padding-bottom: 9%;
+  animation: card-recipe-anim 1s ease-in-out 0s 1 forwards;
+
+}
+
+@keyframes card-recipe-anim{
+  from{
+    margin-top: 0%;
+    opacity:0;
+    background-color: rgb(80, 80, 80);
+  }
+  to{
+    margin-top: 6%;
+    opacity:1;
+    background-color: rgb(25, 25, 25);
+  }
 }
 
 .card-recipe img{
@@ -305,21 +604,20 @@ nav ul li a:active{
 }
 
 .card-link{
- color: white;
- border-radius: 4px;
- font-size: 15px;
- padding: 9px 20px;
- border: 1px solid white;
- text-transform: uppercase;
- transition: all .3s ease-in-out;
- background-color: black;
- opacity: 0.9;
- margin-bottom: 9%;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 9px 20px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+  background-color: black;
+  opacity: 0.9;
+  margin-bottom: 9%;
 }
 
 .card-link:hover{
   background-color: rgba(160,160,160,0.3);
-  transition: all .2s ease-in-out;
   opacity: 1;
   border: 0;
 }
@@ -327,13 +625,17 @@ nav ul li a:active{
 .card-link:active{
   background-color: white;
   color: rgb(25,25,25);
-  -webkit-text-stroke: 0.5px rgb(25,25,25);
+  font-weight: 600;
 }
 
 /* media queries main recetas*/
 @media (max-width: 992px) and (min-width: 576px){
+
   .main-card-recipe{
     grid-template-columns: 1fr 1fr;
+    padding-top: 68px;
+    margin-bottom: 2.5%;
+    grid-column-gap: 2.5%;
   }
 
   .card-recipe h4{
@@ -343,7 +645,6 @@ nav ul li a:active{
   .card-recipe p{
     font-size: 0.95rem;
   } 
-
 }
 
 @media (max-width: 576px){
@@ -351,46 +652,93 @@ nav ul li a:active{
     grid-template-columns: 1fr;
     margin-bottom: 5%;
   }
-
 }
 
 /* main detalles de una receta*/
 
 /*banner*/
 .banner-recipe{
-  background-size: cover;
-  background-position: center;
-  height:calc(40vh + 66px);
-  background-image: url('../img/kaeng-phet-gai-banner.jpg');
-}
-
-.tom-yam-kung{
-  background-image: url('../img/tom-yang-banner.jpg');
-}
-
-.banner-recipe > div{
-  height: 100%;
-  color: white;
-  background-color:rgba(0,0,0,0.2);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(44vh + 66px);
+  animation: banner-recipe-anim 1s ease-in-out 0s 1;
 }
 
-.banner-recipe > div > div{
-  min-width: 38%;
+@keyframes banner-recipe-anim{
+  from{
+    height: calc(38vh + 66px);
+    opacity:0;
+  }
+  to{
+    height: calc(44vh + 66px);
+    opacity:1;
+  }
+}
+
+.container-flex-recipe {
+  z-index: 2;
+  position: relative;
+}
+
+.banner-recipe > div {
+  align-items: center;
+  position: absolute;
   margin-top: 66px;
   background-color:rgba(0,0,0,0.75);
   border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding:3%;
+  animation: banner-recipe-div  1s ease-in-out 0s 1;
 }
 
-.banner-recipe > div > div h1{
-  padding: 5%;
+@keyframes banner-recipe-div{
+  from{
+    margin-top:45px;
+    background-color: rgba(25, 25, 25,0.6);
+    opacity:0;
+  }
+  to{
+    margin-top: 66px;
+    opacity:1;
+    background-color: rgba(0,0,0,0.75);
+  }
+}
+
+.banner-recipe > div h1{
   font-weight: 400;
   font-size: 2.4rem;
-  text-align: center;
+  margin-right: 60px;
+
 }
 
+.banner-recipe > div > div{
+  align-content: center;
+  display: flex;
+}
+
+.spicy img{
+  width:45px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.spicy img:last-child{
+  opacity: 0.5;
+  margin-right: 0;
+}
+
+.spicy-tom-yam-kung img:nth-child(2) {
+  opacity: 0.5;
+}
+
+.banner-recipe picture img{
+  width: 100vw;
+  height: calc(45vh + 66px);
+  object-fit: cover;
+}
 
 /*ingredientes y proceso de preparación*/
 .container-flex-recipe{
@@ -468,7 +816,7 @@ nav ul li a:active{
 .recomendations-object{
   display: inline-block;
   margin-right: 1.2%;
-  border-radius: 4px;
+  position: relative;
 }
 
 .recomendations-object:first-child{
@@ -476,62 +824,34 @@ nav ul li a:active{
   border-bottom-left-radius: 0;
 }
 
-.recomendations-object:last-child{
+.recomendations-object:last-child {
+  margin-right: 0%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.recomendations-object:last-child {
-  margin-right: 0%;
-}
-
-.recomendations-object:nth-child(1) {
-  background: url(../img/tom-yang.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.recomendations-object-tom-yam:nth-child(1) {
-  background: url(../img/kaeng-phet-gai.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.recomendations-object:nth-child(2) {
-  background: url(../img/kai-med-ma-muang.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.recomendations-object:nth-child(3) {
-  background: url(../img/khao-soi.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.recomendations-object:nth-child(4) {
-  background: url(../img/curry-masam.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.recomendations-object:nth-child(5) {
-  background: url(../img/som-tum.jpg) no-repeat center center;
-  background-size: cover;
+.recomendations-object:hover{
+  opacity:0.8;
 }
 
 .recomendations-object > div {
   width: 22vw;
   height: 270px;
   background-color: rgba(25,25,25,0.2);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: end;
+  position: absolute;
 }
 
 .recomendations-object > div a{
   width: 100%; 
-  text-align: center;
   border:0;
   padding: 5%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-bottom:0;
+  transition: all .3s ease-in-out;
 }
 
 .recomendations-object:first-child > div a{
@@ -542,18 +862,45 @@ nav ul li a:active{
   border-bottom-right-radius: 0;
 }
 
+.recomendations-object > img{
+  width: 22vw;
+  height: 270px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
 /* media queries main detalles de una receta*/
 @media (max-width: 992px){
+
   .banner-recipe{
-    height: calc(28vh + 66px);
+    height: calc(35vh + 66px);
+  }
+
+  @keyframes banner-recipe-anim{
+    from{
+      height: calc(29vh + 66px);
+      opacity:0;
+    }
+    to{
+      height: calc(35vh + 66px);
+      opacity:1;
+    }
+  }
+
+  .banner-recipe > div{
+    padding-left: 6%;
+    padding-right: 6%;
+    flex-direction: column;
   }
 
   .banner-recipe > div > div{
     min-width: 45%;
+    margin-top:5%;
   }
 
   .banner-recipe > div > div h1{
     font-size: 2.1rem;
+    margin-right: 0px;
   }
 
   .container-flex-recipe{
@@ -564,7 +911,7 @@ nav ul li a:active{
     margin: 2%;
   }
 
-  .ingredient figcaption {
+  .ingredient figcaption{
     font-size: 1.03rem;
     padding-bottom: 9%;
   }
@@ -573,36 +920,41 @@ nav ul li a:active{
     padding-bottom: 4%;
   }
 
-  .preparation-process h1 {
+  .preparation-process h1{
     text-align: center;
     padding-left: 0;
   }
 
-  .preparation-process ol {
+  .preparation-process ol{
     padding-top: 3.5%;
   }
 
   .preparation-process ol li{
     font-size: 1.03rem;
-      padding: 3% 0;
+    padding: 3% 0;
   }
 
   .recomendations-object{
     margin-right: 1.5%;
   }
 
-  .recomendations-object> div{
+  .recomendations-object > div,
+  .recomendations-object > img {
     width: 30vw;
   }
-
 }
 
 @media (max-width: 768px) { 
+
+  .banner-recipe > div {
+    min-width: 55vw;
+  }
+
   .ingredient > div{
     margin-bottom: 1%;
   }
 
-  .ingredient figure {
+  .ingredient figure{
     width: 50%;
   }
 
@@ -624,6 +976,7 @@ nav ul li a:active{
   .recomendations-recipe h1{
     font-size: 1.2rem;
   }
+
   .preparation-process{
     padding-bottom: 7%;
   }
@@ -641,17 +994,50 @@ nav ul li a:active{
     margin-right: 2.5%;
   }
 
-  .recomendations-object > div {
+  .recomendations-object > div,
+  .recomendations-object > img {
     width: 40vw;
     height: 330px;
   }
-
-
 }
 
 @media (max-width: 576px){
+
+  .banner-recipe {
+    height: calc(35vh + 66px);
+  }
+
+  @keyframes banner-recipe-anim{
+    from{
+      height: calc(29vh + 66px);
+      opacity:0;
+    }
+    to{
+      height: calc(35vh + 66px);
+      opacity:1;
+    }
+  }
+
+  .banner-recipe > div{
+  padding: 7%;
+  }
+
+  .banner-recipe > div h1{
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
   .banner-recipe > div > div{
     min-width: 70%;
+  }
+
+  .spicy{
+    margin-top: 9%;
+    justify-content: center;
+  }
+
+  .spicy img{
+    width: 38px;
   }
 
   .ingredient > div{
@@ -685,12 +1071,11 @@ nav ul li a:active{
     margin-right: 3.5%;
   }
 
-  .recomendations-object > div {
+  .recomendations-object > div,
+  .recomendations-object > img {
     width: 60vw;
   } 
-
 }
-
 
 /* main sobre nosotros */
 
@@ -698,6 +1083,7 @@ nav ul li a:active{
 .container-about-us{
   padding-top: 66px;
 }
+
 .container-about-us,
 .container-form{
   display: flex;
@@ -707,7 +1093,7 @@ nav ul li a:active{
 .about-us-description,
 .about-us-photo,
 .photo-form,
-.form-fields {
+.form-fields{
   flex: 50%; 
   background-color: white;
 }
@@ -716,12 +1102,6 @@ nav ul li a:active{
 .photo-form{
   display: flex;
   align-items: center;
-}
-
-.about-us-photo{
-  background: url(../img/sobre-nosotros.jpg) center center no-repeat;
-  background-size: cover;
-  min-height: 230px;
 }
 
 .about-us-photo > div,
@@ -735,6 +1115,20 @@ nav ul li a:active{
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   padding-left: 10.5%;
+  animation: about-us-photo-anim  1s ease-in-out 0s 1;
+}
+
+@keyframes about-us-photo-anim{
+  from{
+    padding: 2%;
+    padding-left: 7%;
+    opacity:0;
+  }
+  to{
+    padding: 4%;
+    padding-left: 10.5%;
+    opacity:1;
+  }
 }
 
 .about-us-photo h2 {
@@ -746,9 +1140,23 @@ nav ul li a:active{
   font-size: 2rem;
 }
 
-.about-us-description img{
-  width: 70%;
-  margin-top: 6%;
+.about-us-description img {
+  width: 71%;
+  margin-top: 2%;
+  padding-top: 4%;
+  animation: about-us-description-anim  1s ease-in-out 0s 1;
+  filter: invert(100%);
+}
+
+@keyframes about-us-description-anim{
+  from{
+    width: 69%;
+    opacity:0;
+  }
+  to{
+    width: 71%;
+    opacity:1;
+  }
 }
 
 .about-us-description p{
@@ -762,6 +1170,18 @@ nav ul li a:active{
   margin: 2% auto 2%;
   width: 90%;
   grid-column-gap: 2%;
+  animation: container-people-anim  1s ease-in-out 0s 1;
+}
+
+@keyframes container-people-anim {
+  from{
+    margin-top: 1%;
+    opacity:0;
+  }
+  to{
+    margin-top: 2%;
+    opacity:1;
+  }
 }
 
 .container-people > div{
@@ -773,24 +1193,11 @@ nav ul li a:active{
   color: white; 
 }
 
-.container-people > div:nth-child(1){
-  background: url(../img/amaia.jpg) center no-repeat ;
-  background-size: cover;
-}
-
-.container-people > div:nth-child(2){
-  background: url(../img/helena.jpg) center center no-repeat ;
-  background-size: cover;
-}
-
-.container-people > div:nth-child(3){
-  background: url(../img/alejandro.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-.container-people > div:nth-child(4){
-  background: url(../img/gabriel.jpg) center center no-repeat;
-  background-size: cover;
+.container-people img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 4px;
 }
 
 .container-people > div:hover{
@@ -800,11 +1207,13 @@ nav ul li a:active{
 .container-people > div > div{
   background-color: rgba(25,25,25,0.9);
   padding-top: 3%;
-  visibility: hidden;
+  display:none;
+  position:absolute;
+  top:0;
 }
 
 .container-people > div:hover > div{
- visibility:visible;
+  display:block;
 }
 
 .container-people > div > div h4{
@@ -813,29 +1222,27 @@ nav ul li a:active{
 }
 
 .container-people > div > div p{
-  padding: 3% 3% 5%;
+  padding: 3% 4% 5%;
   font-weight: 300;
   font-size: 1rem;
 }
 
 /* formulario de contacto */
 .photo-form{
-  background: url(../img/contacto.jpg) center center no-repeat;
-  background-size: cover;
   justify-content: center;
 }
 
-.photo-form div {
+.photo-form div{
   border-radius: 4px;
   padding: 5%;
 }
 
-.photo-form div h1 {
+.photo-form div h1{
   font-weight: 500;
   font-size: 1.6rem;
 }
 
-.form-fields {
+.form-fields{
   width: 80%;
   padding-top: 2%;
 }
@@ -843,8 +1250,8 @@ nav ul li a:active{
 form{
   width: 80%;
   margin: 0 auto;
+  }
 
-}
 fieldset{
   border:0;
 }
@@ -854,7 +1261,7 @@ form div{
   padding-bottom: 3%;
 }
 
-.feedback-input {
+.feedback-input{
   font-size: 1rem;
   padding: 2%;
   width: 100%;
@@ -863,11 +1270,11 @@ form div{
   border-bottom: 2px solid black;
   font-family: 'Open sans', sans-serif;
   font-weight: 600;
+  transition: .4s ease;
 }
 
 .feedback-input:focus {
-  color: black;
-  transition: .4s ease;
+  color: grey;
   outline: none;
 }
 
@@ -880,12 +1287,12 @@ textarea {
   background-color: rgb(20,20,20);
   color: white;
   font-size: 1.15rem;
-  padding:10px 20px;
+  padding:12px 22px;
   transition: .3s ease;
   border-radius: 4px;
   font-weight: 300;
-  border:2px solid rgb(20,20,20);
   margin-bottom: 4%;
+  border:2px solid white;
 }
 
 #button-send:hover {
@@ -896,7 +1303,8 @@ textarea {
   opacity:1;
   color:black;
   background-color: white;
-  -webkit-text-stroke: 0.5px black;
+  font-weight: 500;
+  border:2px solid rgb(20,20,20);
 }
 
 .warnings{
@@ -906,14 +1314,14 @@ textarea {
 }
 
 /* media queries sobre nosotros */
-@media (max-width: 1200px){
- .container-people{
-   grid-template-columns: 1fr 1fr;
-   margin-bottom: 1%;
-   margin-top: 3%;
+@media (max-width: 1248px){
+
+  .container-people{
+    margin-bottom: 1%;
+    padding-top: 1%;
   }
 
- .container-people > div{
+  .container-people > div{
     margin-bottom: 6%;
   }
 
@@ -921,18 +1329,69 @@ textarea {
   .container-people > div:nth-child(3){
     margin-right: 1.5%;
   }
-
 }
 
 @media (max-width: 992px){
+
+  .container-people{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .about-us-description p{
     margin: 8.5%;
     margin-top: 6%;
   }
 
+  .photo-form svg {
+    width:20vw;
+    margin-top:7%;
+  }
+}
+
+@media (min-width: 780px){
+
+  .photo-form > div {
+    transition: all .1s ease-in-out;
+  }
+
+  .photo-form:hover > div {
+    background-color: rgba(0,0,0,0.85);
+  }
+
+  .photo-form svg {
+    width:15vw;
+    margin-top:10%;
+  }
+
+  .photo-form svg path {
+    fill: transparent;
+    stroke-width: 6;
+    stroke: white;
+    stroke-dasharray: 4000;
+  }
+
+  .photo-form:hover div svg path{
+    animation: photo-form-anim 10s linear forwards;
+    stroke-width: 5;
+  }
+
+  @keyframes photo-form-anim{
+    0%{
+      stroke-dashoffset:0;
+    }
+    50%{
+      stroke-dashoffset:4000;
+      opacity:0;
+    }
+    100%{
+      stroke-dashoffset:0;
+      opacity:0.9;
+    }
+  }
 }
 
 @media (max-width: 768px) and (min-width: 576px){
+
   .container-about-us,
   .container-form{
     flex-direction: column;
@@ -943,7 +1402,7 @@ textarea {
   }
 
   .about-us-description img{
-    margin-top: 2.5%;
+    padding-top: 3%;
   }
 
   .about-us-description p{
@@ -951,17 +1410,20 @@ textarea {
     margin: 6%;
     margin-top: 4.5%;
   } 
-
 }
 
 @media (max-width: 780px){
-  .about-us-photo > div {
+  
+  .about-us-photo{
+    padding:30%;
+  }
+
+  .moment{
     display:none;
   }
 
   .container-people{
-    grid-template-columns: 1fr;
-    margin-top: 4%;
+    padding-top: 2%;
     margin-bottom: 0;
   }
 
@@ -980,7 +1442,7 @@ textarea {
   }
 
   .container-people > div > div{
-  visibility: visible;
+    visibility: visible;
   }
 
   .container-form div {
@@ -992,7 +1454,7 @@ textarea {
   .photo-form div{
     background:white;
     color:black;
-    padding-bottom: 0;
+    padding-bottom: 1%;
     padding-top: 3.5%;
   }
 
@@ -1001,9 +1463,34 @@ textarea {
     font-size: 1.7rem;
   }
 
+  .photo-form svg{
+    display:none;
+  }
 }
 
 @media (max-width: 576px){
+
+  .about-us-photo{
+    height: 300px;
+  }
+
+  @keyframes about-us-description-anim{
+    from{
+      margin-top:0;
+      width: 77.5%;
+      opacity:0;
+    }
+    to{
+      width: 82.5%;
+      margin-top: 2%;
+      opacity:1;
+    }
+  }
+
+  .container-people{
+    grid-template-columns: 1fr;
+  }
+
   .container-about-us,
   .container-form{
     flex-direction: column;
@@ -1018,13 +1505,12 @@ textarea {
   }
 
   .container-people{
-    margin-top: 5%;
+    padding-top: 3%;
   }
 
   .container-people > div{
     margin-bottom: 5%;
   }
-
 }
 
 /* main documentacion */
@@ -1042,18 +1528,43 @@ textarea {
 
 .documentation p{
   margin-top: 2%;
+  margin-bottom: 2%;
   background-color: rgba(25,25,25,0.2);
   padding: 2%;
   border-radius: 4px;
+  animation: documentation-p-anim 1s ease-in-out 0s 1;
+}
+
+@keyframes documentation-p-anim{
+  from{
+    padding-top:0;
+    opacity:0;
+  }
+  to{
+    padding-top: 2%;
+    opacity:1;
+  }
 }
 
 .documentation ul{
- padding-top: 2%;
-} 
+  padding-top: 2%;
+  animation: documentation-ul-anim 1s ease-in-out 0s 1;
+}
+
+@keyframes documentation-ul-anim {
+  from{
+    padding-top:0;
+    opacity:0;
+  }
+  to{
+  padding-top: 2%;
+  opacity:1;  
+  }
+}
 
 .documentation li{
- padding-bottom: 1.5%;
- list-style: none;
+  padding-bottom: 1.5%;
+  list-style: none;
 }
 
 .documentation a{
@@ -1062,32 +1573,59 @@ textarea {
 
 /* media queries documentacion */
 @media (max-width: 992px){
+  
   .documentation{
     width: 90vw;
     margin: 0 auto;
   }
 
+  .documentation ul:last-child{
+    padding-bottom: 4%;
+  } 
 } 
 
 @media (max-width: 780px){
+
   .documentation{
     padding-bottom: 4%;
   }  
 
   .documentation h1{
-    padding-top: 4%;
+    padding-top: 3%;
   }
 
   .documentation p{
     margin-top: 3%;
-    margin-bottom: 1%;
-   padding: 3%;
+    margin-bottom:3%;
+    padding: 3%;
   }
 
+  @keyframes documentation-p-anim {
+    from{
+      padding-top:1%;
+      opacity:0;
+    }
+    to{
+      padding-top: 3%;
+      opacity:1;
+    }
+  }
+  
   .documentation ul{
-  padding-top: 1%;
-  padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 2%;
   } 
+
+  @keyframes documentation-ul-anim {
+    from{
+      padding-top:0;
+      opacity:0;
+    }
+    to{
+      padding-top: 1%;
+      opacity:1;
+    }
+  }
 
   .documentation li{
     text-decoration-style: solid;
@@ -1099,20 +1637,30 @@ textarea {
   .documentation li:last-child{
     border-bottom: 0;
   }
-
 }
 
 @media (max-width: 576px){ 
+  
   .documentation h1{
     margin-bottom: 2%;
   }
 
   .documentation p{
-    margin-top: 5%;
-    margin-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 5%;
     padding: 4%;
   }
 
+  @keyframes documentation-p-anim {
+    from{
+      padding-top:3%;
+      opacity:0;
+    }
+    to{
+      padding-top: 4%;
+      opacity:1;
+    }
+  }
 }
 
 /* footer */
@@ -1125,6 +1673,34 @@ footer{
 footer > div{
   width: 90vw;
   margin: 0 auto;
+}
+
+.footer-left ul li {
+  line-height: 4.1rem;
+  font-size: 1rem;
+  display:inline-block;
+}
+
+.footer-left ul li a{
+  transition: all .2s ease-in-out;
+  color: white;
+  opacity:0.5;
+}
+
+.footer-left ul li a:hover{
+  color:white;
+  opacity:1;
+}
+
+.footer-left ul li::after {
+  content: "|";
+  margin-left:6px;
+  margin-right:2px;
+  color: #8f9296;
+}
+
+.footer-left ul li:last-child::after {
+  content: "";
 }
 
 .footer-right {
@@ -1150,7 +1726,7 @@ footer > div{
 
 .footer-right a:hover{
   transform: scale(1.1); 
-  color: rgb(160,160,160);
+  color: rgba(25,25,25,0.8);
   background-color: white;
 }
 
@@ -1159,29 +1735,98 @@ footer > div{
   background-color: white;
 }
 
-.footer-left p {
-  color: #8f9296;
-  line-height: 4.1rem;
-  font-size: 0.9rem;
-}
-
 /* media queries footer */
 @media (max-width: 780px){
+
   footer{
     padding-bottom: 4%;
     padding-top: 2.5%;  
     text-align: center;
   }
 
-  .footer-left p {
+  .footer-left ul li{
     line-height: 2rem;
   }
 
   .footer-right {
     float: none;
   }
+}
 
+@media (max-width: 576px){
+  .footer-left ul li {
+    line-height: 2rem;
+  }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+.about-us-photo,
+.photo-form{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us-photo {
+  background-image: image-set(
+    url(../img/sobre-nosotros-840.jpg) 1x,
+    url(../img/sobre-nosotros-840-2x.jpg) 2x
+    );
+}
+
+
+@media (max-width: 780px){
+  .about-us-photo {
+    background-image: image-set(
+      url(../img/sobre-nosotros-780.jpg) 1x,
+      url(../img/sobre-nosotros-780-x2.jpg) 2x
+      );
+  }
+}
+
+
+@media (min-width: 780px){
+  .photo-form {
+    background-image: image-set(
+      url(../img/contacto-840.jpg) 1x,
+      url(../img/contacto-840-2x.jpg) 2x
+      );
+  }
+}
+*/
