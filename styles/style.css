@@ -44,7 +44,7 @@ nav a img{
   height: 27px;
   display: table-cell;
   vertical-align: middle;
-  width:auto;
+  width: 41.5%;
 
 }
 
@@ -1153,6 +1153,7 @@ nav ul li a:active{
   padding-top: 4%;
   animation: about-us-description-anim  1s ease-in-out 0s 1;
   filter: invert(100%);
+  height: auto;
 }
 
 @keyframes about-us-description-anim{
