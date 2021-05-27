@@ -1158,7 +1158,7 @@ nav ul li a:active{
   padding-top: 4%;
   animation: about-us-description-anim  1s ease-in-out 0s 1;
   filter: invert(100%);
-  height: auto;
+  height: 22.5%;
 }
 
 @keyframes about-us-description-anim{
@@ -1525,6 +1525,7 @@ textarea {
 
   .about-us-description img{
     width: 82.5%;
+    height: 15%;
   }
 
   .about-us-description p{
