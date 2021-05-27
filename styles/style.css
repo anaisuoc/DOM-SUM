@@ -44,11 +44,12 @@ nav a img{
   height: 27px;
   display: table-cell;
   vertical-align: middle;
+  width:auto;
+
 }
 
 nav a .logo-reduce{
   display: none;
-  width:auto;
 }
 
 nav a div p{
