@@ -1,31 +1,9 @@
 import moment from 'moment-timezone';
 
-/*menu responsive*/
-const hamburguer = document.querySelector('.menu-ham');
-const links = document.querySelector('ul');
-const bars = document.querySelectorAll('.menu-ham span');
-
-hamburguer.addEventListener('click', function () {
-	links.classList.toggle('show');
-	bars.forEach(function (child) {
-		child.classList.toggle('animation');
-	});
-});
-
-
-/*slider*/
-let box = document.querySelectorAll('.box-clip-path');
-box.forEach(function (popup) {
-	popup.addEventListener('click', function () {
-		popup.classList.toggle('active');
-	});
-});
-
 /*hora en Bangkok*/
 let date = moment();
 date.tz('Asia/Bangkok');
 document.getElementById('hora-bangkok').innerHTML = date.format('LT');
-
 
 /*validación de formulario*/
 const form = document.getElementById('form');
@@ -68,22 +46,3 @@ form.addEventListener('submit', function (evt) {
 		errormessage.innerHTML = warningmessage;
 	}
 });
-
-//lazy loading
-if ('loading' in HTMLImageElement.prototype) {
-	// Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
-	// `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
-	console.log('Browser support `loading`...');
-	const images = document.querySelectorAll("img.lazyload");
-	images.forEach(img => {
-		img.src = img.dataset.src;
-	});
-} else {
-	console.log('Not supported');
-
-	// Importamos dinámicamente la libreria `lazysizes`
-	let script = document.createElement("script");
-	script.async = true;
-	script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js";
-	document.body.appendChild(script);
-}
