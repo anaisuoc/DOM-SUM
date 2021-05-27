@@ -796,6 +796,8 @@ nav ul li a:active{
 
 .ingredient figure img{
   width: 100%;
+  object-fit: cover;
+height: 64%;
 }
 
 .ingredient figcaption{
@@ -932,6 +934,10 @@ nav ul li a:active{
 
   .ingredient > div{
     margin: 2%;
+  }
+
+  .ingredient figure img{
+  height: 76%;
   }
 
   .ingredient figcaption{
