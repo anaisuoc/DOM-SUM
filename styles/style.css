@@ -746,6 +746,7 @@ nav ul li a:active{
   width:45px;
   margin-right: 15px;
   margin-bottom: 5px;
+  height:100%;
 }
 
 .spicy img:last-child{
