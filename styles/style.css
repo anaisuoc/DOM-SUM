@@ -48,6 +48,7 @@ nav a img{
 
 nav a .logo-reduce{
   display: none;
+  width:auto;
 }
 
 nav a div p{
