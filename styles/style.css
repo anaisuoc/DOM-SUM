@@ -1,8 +1,7 @@
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff");
-  font-display: wrap;
 
+.fa {
+  font-family: "FontAwesome";
+  font-display: wrap;
 }
 *{
   padding: 0;
