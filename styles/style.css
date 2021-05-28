@@ -717,7 +717,6 @@ nav ul li a{
   border-radius: 3px;
   border: 1px solid transparent;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
 
 }
 
@@ -1557,7 +1556,7 @@ nav ul li a:active{
   .ingredient figure img {
     height: 75%;
   }
-  
+
   .preparation-process{
     padding-bottom: 4%;
   }
