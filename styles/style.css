@@ -633,7 +633,6 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  font-display: swap;
 }
 
 body{
@@ -676,8 +675,6 @@ nav a img{
   height: 27px;
   display: table-cell;
   vertical-align: middle;
-  width: 41.5%;
-
 }
 
 nav a .logo-reduce{
@@ -756,6 +753,19 @@ nav ul li a:active{
 }
 
 /* Animaciones menú responsive */
+.br-1.animation{
+  transform: rotate(-45deg) translate(-5px, 7.8px);
+  transition: 0.4s;
+}
+
+.br-2.animation{
+  opacity: 0; 
+
+}
+.br-3.animation{
+  transform: rotate(45deg) translate(-5px, -7.8px);
+  transition: 0.4s;
+}
 
 /* media queries header*/
 @media (max-width: 992px){
@@ -784,6 +794,10 @@ nav ul li a:active{
     background-color: rgba(25,25,25,0.95);
   }
 
+  nav ul.show{
+    left: 0;
+  }
+
   nav ul li{
     display: block;
     margin: 40px 0;
@@ -802,7 +816,6 @@ nav ul li a:active{
 
   nav a .logo-reduce {
     display: inline;
-    width: 8.6%;
   }
 }
 
@@ -847,7 +860,6 @@ nav ul li a:active{
 .logo-index div img{
   width: 450px; 
   margin: 7%;
-  height: 76px;
 }
 
 .logo-index div h1 {
@@ -1012,6 +1024,10 @@ nav ul li a:active{
     z-index: 1;
   }
 
+  .container-clip-path .box-clip-path.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
   .container-clip-path .box-clip-path:nth-child(1) .tittle-clip-path,
   .container-clip-path .box-clip-path:nth-child(3) .tittle-clip-path{
     width: 33vw;
@@ -1048,6 +1064,10 @@ nav ul li a:active{
     border-radius: 4px;
     color: white;
     max-width: 33vw;
+  }
+
+  .container-clip-path .box-clip-path.active .content-box-clip-path{
+    opacity:1;
   }
 
   .container-clip-path .content-box-clip-path .fas{
@@ -1201,7 +1221,6 @@ nav ul li a:active{
   width: 100%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
-  height:100%;
 }
 
 .card-recipe h4{
@@ -1336,7 +1355,6 @@ nav ul li a:active{
   width:45px;
   margin-right: 15px;
   margin-bottom: 5px;
-  height:100%;
 }
 
 .spicy img:last-child{
@@ -1387,8 +1405,6 @@ nav ul li a:active{
 
 .ingredient figure img{
   width: 100%;
-  object-fit: cover;
-height: 64%;
 }
 
 .ingredient figcaption{
@@ -1525,10 +1541,6 @@ height: 64%;
 
   .ingredient > div{
     margin: 2%;
-  }
-
-  .ingredient figure img{
-  height: 76%;
   }
 
   .ingredient figcaption{
@@ -1770,7 +1782,6 @@ height: 64%;
   padding-top: 4%;
   animation: about-us-description-anim  1s ease-in-out 0s 1;
   filter: invert(100%);
-  height: 22.5%;
 }
 
 @keyframes about-us-description-anim{
@@ -2137,7 +2148,6 @@ textarea {
 
   .about-us-description img{
     width: 82.5%;
-    height: 15%;
   }
 
   .about-us-description p{
@@ -2434,36 +2444,3 @@ footer > div{
     line-height: 2rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

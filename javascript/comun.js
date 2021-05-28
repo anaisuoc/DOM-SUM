@@ -22,3 +22,4 @@ if ('loading' in HTMLImageElement.prototype) {
 	script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js";
 	document.body.appendChild(script);
 }
+
