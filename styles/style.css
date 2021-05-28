@@ -675,6 +675,7 @@ nav a img{
   height: 27px;
   display: table-cell;
   vertical-align: middle;
+  width: 41.5%;
 }
 
 nav a .logo-reduce{
@@ -860,6 +861,7 @@ nav ul li a:active{
 .logo-index div img{
   width: 450px; 
   margin: 7%;
+  height: 80px;
 }
 
 .logo-index div h1 {
