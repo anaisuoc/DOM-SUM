@@ -20,7 +20,7 @@
     "parcel:dev": "parcel index.html",
     "parcel:build": "parcel build index.html",
     "clean": "rimraf dist .cache .cache-loader",
-    "cleancss": "purgecss --css ./styles/style.css --content *.html --output ./style/"
+    "cleancss": "purgecss --css ./styles/style.css --content *.html --output ./styles/"
 
   },
   "keywords": [],
