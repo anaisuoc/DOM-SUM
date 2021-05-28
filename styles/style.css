@@ -1,18 +1,8 @@
 
-@font-face {
-  font-family: "FontAwesome";
-  font-style: normal;
-  font-weight: 400;
-  src: local('FontAwesome'), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2) format('woff2');
-  font-display: swap;
+ i::before{
+   font-display: swap;
 }
-@font-face {
-  font-family: "FontAwesome";
-  font-style: normal;
-  font-weight: 400;
-  src: local('FontAwesome'), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2) format('woff2');
-  font-display: swap;
-}
+
 *{
   padding: 0;
   margin: 0;
