@@ -610,15 +610,15 @@ nav ul li a:active{
   grid-column-gap: 2%;
   width: 90%;
   margin-bottom: 2%;
+  color: white; 
+  text-align: center;
 }
 
 .card-recipe{
   border-radius: 4px;
-  text-align: center;
-  color: white; 
   padding-bottom: 9%;
   animation: card-recipe-anim 1s ease-in-out 0s 1 forwards;
-margin-top:0;
+  margin-top:0;
 }
 
 @keyframes card-recipe-anim{
