@@ -2412,7 +2412,6 @@ footer > div{
   color: white;
   height: 35px;
   width: 35px;
-  font-size: 1.2rem;
   background-color: rgba(160,160,160,0.3);
   justify-content: center;
   align-items: center;
@@ -2433,8 +2432,8 @@ footer > div{
 }
 
 .footer-right img{
-  width: 60%;
-  height: 60%;
+  width: 56%;
+  height: 56%;
 }
 
 /* media queries footer */
