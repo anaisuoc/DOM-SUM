@@ -494,6 +494,7 @@ nav ul li a:active{
     width: 9px;
     padding-right: 5px;
     object-fit: cover;
+    height: 100%;
   }
   .container-clip-path .content-box-clip-path p{
     margin-top: 2%;
