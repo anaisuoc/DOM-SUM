@@ -104,9 +104,11 @@ nav a .logo-reduce{
 nav a div p{
   font-size: 1.1rem;
   display: inline-block;
+  vertical-align: middle;
   color: white;
-}
+  margin-left: 9px;
 
+}
 
 
 nav a div:hover{
@@ -258,6 +260,8 @@ nav ul li a:active{
   position: absolute;
   margin-top: 66px;  
   animation: logo-index-anim 1s ease-in-out 0s 1 forwards;
+  background-color: rgba(0,0,0,0.8);
+
 }
 
 @keyframes logo-index-anim{
@@ -611,6 +615,9 @@ nav ul li a:active{
   border-radius: 4px;
   padding-bottom: 9%;
   animation: card-recipe-anim 1s ease-in-out 0s 1 forwards;
+  margin-top:0;
+  background-color: rgb(25, 25, 25);
+
 }
 
 @keyframes card-recipe-anim{
