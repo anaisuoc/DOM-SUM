@@ -1665,7 +1665,7 @@ textarea {
 
 @keyframes documentation-ul-anim {
   from{
-    transform: translateY(-30px);
+    transform: translateY(-15px);
     opacity:0;
   }
   to{
@@ -1714,7 +1714,7 @@ textarea {
 
   @keyframes documentation-p-anim {
     from{
-      transform: translateY(-30px);
+      transform: translateY(-15px);
       opacity:0;
     }
     to{
