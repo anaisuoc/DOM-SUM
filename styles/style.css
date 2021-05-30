@@ -2130,7 +2130,8 @@ textarea {
     padding-top: 3%;
   }
   .container-people img {
-    height:auto;
+    height:70%;
+    width:100%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 4px;
