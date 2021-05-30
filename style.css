@@ -131,7 +131,6 @@ nav ul li a{
   opacity: 0.5;
   padding: 6px 10px;
   border-radius: 3px;
-  border: 1px solid transparent;
   filter: brightness(0) invert(1);
 }
 
@@ -146,7 +145,7 @@ nav ul li a:hover{
 
 nav ul li a:active{
   background-color:white;
-  color: rgb(25,25,25);
+  filter: grayscale(100%);
 }
 
 /* Menú responsive */
