@@ -744,14 +744,12 @@ nav ul li a:active{
 
 @keyframes banner-recipe-div{
   from{
-    margin-top:45px;
-    background-color: rgba(25, 25, 25,0.6);
+    transform: translateY(-20px);
     opacity:0;
   }
   to{
-    margin-top: 66px;
+    transform: translateY(0px);
     opacity:1;
-    background-color: rgba(0,0,0,0.75);
   }
 }
 
@@ -902,7 +900,6 @@ nav ul li a:active{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   margin-bottom:0;
-  transition: all .3s ease-in-out;
 }
 
 .recomendations-object:first-child > div a{
