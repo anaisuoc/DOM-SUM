@@ -124,17 +124,18 @@ nav ul{
 
 nav ul li{
   display: inline-block;
-  line-height: 4.2rem;
+  line-height: 4.1rem;
   margin: 0 8px;
   font-size: 0.88rem;
-  opacity: 0.5;
 }
 
 nav ul li a{
   color: white;
+  opacity: 0.5;
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: 1px solid transparent;
   text-transform: uppercase;
- transition: all .2s ease-in-out;
-
 }
 
 .activo{
