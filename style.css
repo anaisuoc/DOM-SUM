@@ -1790,7 +1790,6 @@ footer > div{
 }
 
 .footer-left ul li a{
-  transition: all .2s ease-in-out;
   color: white;
   opacity:0.5;
 }
