@@ -60,6 +60,9 @@ body{
 h1, h2, h3, h4, h5, h5, ul, li, a, p, figcaption{
   font-family: "Open sans",sans-serif;
 }
+a{
+  color:white;
+}
 .body-white{
   background-color: white;
 }
@@ -132,7 +135,6 @@ nav ul li{
 }
 
 nav ul li a{
-  color: white;
   opacity: 0.5;
   padding: 6px 10px;
   border-radius: 3px;
