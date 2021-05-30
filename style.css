@@ -104,15 +104,10 @@ nav a .logo-reduce{
 nav a div p{
   font-size: 1.1rem;
   display: inline-block;
-  vertical-align: middle;
   color: white;
 }
 
-nav a div p::before{
-  content: "|";
-  margin-left: 9px;
-  margin-right: 8px;
-}
+
 
 nav a div:hover{
   opacity: 0.5;
@@ -269,12 +264,10 @@ nav ul li a:active{
   from{
     padding-top: 4%; 
     opacity: 0;
-    background-color: rgba(25, 25, 25,0.6);
   }
   to{
     padding-top: 7%; 
     opacity: 1;
-    background-color: rgba(0,0,0,0.8);
   }
 }
 
@@ -618,19 +611,16 @@ nav ul li a:active{
   border-radius: 4px;
   padding-bottom: 9%;
   animation: card-recipe-anim 1s ease-in-out 0s 1 forwards;
-  margin-top:0;
 }
 
 @keyframes card-recipe-anim{
   from{
     margin-top: 0%;
     opacity:0;
-    background-color: rgb(80, 80, 80);
   }
   to{
     margin-top: 6%;
     opacity:1;
-    background-color: rgb(25, 25, 25);
   }
 }
 
