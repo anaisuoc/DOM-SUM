@@ -1176,17 +1176,18 @@ nav ul li a:active{
   border-bottom-right-radius: 4px;
   padding-left: 10.5%;
   animation: about-us-photo-anim  1s ease-in-out 0s 1;
+  padding: 4%;
+    padding-left: 10.5%;
 }
 
 @keyframes about-us-photo-anim{
   from{
-    padding: 2%;
-    padding-left: 7%;
+    transform: translateX(-222px);
     opacity:0;
   }
   to{
-    padding: 4%;
-    padding-left: 10.5%;
+    transform: translateX(0px);
+
     opacity:1;
   }
 }
