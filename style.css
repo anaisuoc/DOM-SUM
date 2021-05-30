@@ -24,7 +24,6 @@
        url('fonts/open-sans-v20-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
-/* open-sans-600 - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -38,7 +37,6 @@
        url('fonts/open-sans-v20-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
-/* open-sans-700 - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -52,7 +50,6 @@
        url('fonts/open-sans-v20-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
-/* open-sans-800 - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
