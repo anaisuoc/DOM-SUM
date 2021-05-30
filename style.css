@@ -1237,11 +1237,11 @@ nav ul li a:active{
 
 @keyframes container-people-anim {
   from{
-    margin-top: 1%;
+    transform: translateY(-2%);
     opacity:0;
   }
   to{
-    margin-top: 2%;
+    transform: translateY(0%);
     opacity:1;
   }
 }
