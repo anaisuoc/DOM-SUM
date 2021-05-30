@@ -60,9 +60,7 @@ body{
 h1, h2, h3, h4, h5, h5, ul, li, a, p, figcaption{
   font-family: "Open sans",sans-serif;
 }
-a{
-  color:white;
-}
+
 .body-white{
   background-color: white;
 }
@@ -230,6 +228,7 @@ nav ul li a:active{
   nav ul li a{
     font-size: 1rem;
     opacity: 1;
+    color:white;
   }
 }
 
@@ -305,6 +304,7 @@ nav ul li a:active{
 .logo-index div a:hover {
   background-color: rgba(160,160,160,0.6);
   color: #F8F8F8;
+  transform: translateY(-1px);
 }
 
 .logo-index div a:active{
