@@ -715,11 +715,11 @@ nav ul li a:active{
 
 @keyframes banner-recipe-anim{
   from{
-    height: calc(38vh + 66px);
+    transform: scale(1.05);
     opacity:0;
   }
   to{
-    height: calc(44vh + 66px);
+    transform: scale(1);
     opacity:1;
   }
 }
@@ -926,7 +926,7 @@ nav ul li a:active{
 
   @keyframes banner-recipe-anim{
     from{
-      height: calc(29vh + 66px);
+      
       opacity:0;
     }
     to{
