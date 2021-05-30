@@ -2424,13 +2424,17 @@ footer > div{
 
 .footer-right a:hover{
   transform: scale(1.1); 
-  color: rgba(25,25,25,0.8);
-  background-color: white;
+  filter: invert(1);
+  background-color: #404040;
 }
 
 .footer-right a:active{
-  color: black;
-  background-color: white;
+  background-color: black;
+}
+
+.footer-right img{
+  width: 60%;
+  height: 60%;
 }
 
 /* media queries footer */
