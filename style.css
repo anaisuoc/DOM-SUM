@@ -1233,6 +1233,8 @@ nav ul li a:active{
   width: 90%;
   grid-column-gap: 2%;
   animation: container-people-anim  1s ease-in-out 0s 1;
+  background-color: black;
+  color: white; 
 }
 
 @keyframes container-people-anim {
@@ -1248,11 +1250,10 @@ nav ul li a:active{
 
 .container-people > div{
   min-height:365px;
-  border-radius: 4px;
   text-align: center;
   transition: all 0.25s;
-  background-color: rgba(25,25,25,0.9);
-  color: white; 
+
+
 }
 
 .container-people img{
@@ -1264,6 +1265,7 @@ nav ul li a:active{
 
 .container-people > div:hover{
  transform: translateY(-5px);
+
 }
 
 .container-people > div > div{
@@ -1272,6 +1274,8 @@ nav ul li a:active{
   display:none;
   position:absolute;
   top:0;
+  border-radius: 4px;
+
 }
 
 .container-people > div:hover > div{
