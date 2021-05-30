@@ -60,7 +60,7 @@ body{
 h1, h2, h3, h4, h5, h5, ul, li, a, p, figcaption{
   font-family: "Open sans",sans-serif;
 }
-a { color: white; }
+
 .body-white{
   background-color: white;
 }
@@ -132,6 +132,7 @@ nav ul li a{
   padding: 6px 10px;
   border-radius: 3px;
   border: 1px solid transparent;
+  filter: brightness(0) invert(1);
 }
 
 .activo{
@@ -262,11 +263,11 @@ nav ul li a:active{
 
 @keyframes logo-index-anim{
   from{
-    padding-top: 4%; 
+    transform: translateY(-20px);
     opacity: 0;
   }
   to{
-    padding-top: 7%; 
+    transform: translateY(0px); 
     opacity: 1;
   }
 }
