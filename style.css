@@ -1182,7 +1182,7 @@ nav ul li a:active{
 
 @keyframes about-us-photo-anim{
   from{
-    transform: translateX(-222px);
+    transform: translateX(-60px);
     opacity:0;
   }
   to{
@@ -1212,11 +1212,11 @@ nav ul li a:active{
 
 @keyframes about-us-description-anim{
   from{
-    width: 69%;
+    transform: scale(0.9);
     opacity:0;
   }
   to{
-    width: 71%;
+    transform: scale(1);
     opacity:1;
   }
 }
