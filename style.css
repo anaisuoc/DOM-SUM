@@ -55,10 +55,11 @@
 }
 
 body{
-  font: 400 15px/1.5 'Open sans', sans-serif;
   background-color: black;
 }
-
+h1, h2, h3, h4, h5, h5, ul, li, a, p{
+  font: 400 15px/1.5 'Open sans', sans-serif;
+}
 .body-white{
   background-color: white;
 }
@@ -84,7 +85,6 @@ nav a div{
   left: 5%;
   margin: auto;
   height: 27px;
-  transition: all .1s ease-in;
   display: flex;
   align-items: center;
 }
@@ -294,7 +294,6 @@ nav ul li a:active{
   padding: 9px 11px;
   text-transform: uppercase;
   border-radius: 4px;
-  transition: all .2s ease-in-out;
   margin-top: 8%;
   margin-bottom: 3%;
   background-color: rgba(160,160,160,0.3);
@@ -303,7 +302,6 @@ nav ul li a:active{
 .logo-index div a:hover {
   background-color: rgba(160,160,160,0.6);
   color: #F8F8F8;
-  transform: translateY(-1px);
 }
 
 .logo-index div a:active{
