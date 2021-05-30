@@ -106,7 +106,7 @@ nav a div p{
   display: inline-block;
   vertical-align: middle;
   color: white;
-  margin-left: 9px;
+  margin-left: 8px;
 
 }
 
@@ -566,7 +566,6 @@ nav ul li a:active{
 
   nav a div p{
     font-size: 1.1rem;
-    padding-left: 7px;
   }
 
   nav a div p::before {
