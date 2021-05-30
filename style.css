@@ -330,6 +330,11 @@ nav ul li a:active{
   line-height: 4rem;
 }
 
+.map {
+  width: 10px;
+  padding-right: 5px;
+}
+
 .meet-us-index{ 
   position: relative;
   background: rgb(25,25,25);
