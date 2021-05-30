@@ -1665,11 +1665,11 @@ textarea {
 
 @keyframes documentation-ul-anim {
   from{
-    padding-top:0;
+    transform: translateY(-30px);
     opacity:0;
   }
   to{
-  padding-top: 2%;
+    transform: translateY(0px);
   opacity:1;  
   }
 }
@@ -1714,11 +1714,11 @@ textarea {
 
   @keyframes documentation-p-anim {
     from{
-      padding-top:1%;
+      transform: translateY(-30px);
       opacity:0;
     }
     to{
-      padding-top: 3%;
+      transform: translateY(0px);
       opacity:1;
     }
   }
