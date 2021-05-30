@@ -124,6 +124,8 @@ nav ul li{
   margin: 0 8px;
   font-size: 0.88rem;
   text-transform: uppercase;
+  filter: brightness(0) invert(1);
+
 
 }
 
@@ -131,7 +133,6 @@ nav ul li a{
   opacity: 0.5;
   padding: 6px 10px;
   border-radius: 3px;
-  filter: brightness(0) invert(1);
 }
 
 .activo{
@@ -145,7 +146,6 @@ nav ul li a:hover{
 
 nav ul li a:active{
   background-color:white;
-  filter: grayscale(100%);
 }
 
 /* Menú responsive */
