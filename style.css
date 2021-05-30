@@ -1730,11 +1730,11 @@ textarea {
 
   @keyframes documentation-ul-anim {
     from{
-      padding-top:0;
+      transform: translateY(-15px);
       opacity:0;
     }
     to{
-      padding-top: 1%;
+      transform: translateY(0px);
       opacity:1;
     }
   }
