@@ -1336,7 +1336,6 @@ form div{
   border-bottom: 2px solid black;
   font-family: 'Open sans', sans-serif;
   font-weight: 600;
-  transition: .4s ease;
 }
 
 .feedback-input:focus {
@@ -1416,8 +1415,7 @@ textarea {
 
 @media (min-width: 780px){
   
-  .photo-form > div {
-  }
+
 
   .photo-form:hover > div {
     background-color: rgba(0,0,0,0.85);
