@@ -1665,7 +1665,7 @@ textarea {
 
 @keyframes documentation-ul-anim {
   from{
-    transform: translateY(-15px);
+    transform: translateY(-20px);
     opacity:0;
   }
   to{
@@ -1764,16 +1764,15 @@ textarea {
   }
 
   @keyframes documentation-p-anim {
-    from{
-      padding-top:3%;
-      opacity:0;
+      from{
+        transform: translateY(-8px);
+        opacity:0;
+      }
+      to{
+        transform: translateY(0px);
+        opacity:1;
+      }
     }
-    to{
-      padding-top: 4%;
-      opacity:1;
-    }
-  }
-}
 
 /* footer */
 footer{
