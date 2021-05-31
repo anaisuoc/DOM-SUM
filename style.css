@@ -1223,8 +1223,7 @@ nav ul li a:active{
   height: 100%;
   border-radius: 4px;
 }
-.container-people > div:nth-child(1),
-  .container-people > div:nth-child(3){
+.container-people > div{
     margin-right: 1.5%;
   }
 
