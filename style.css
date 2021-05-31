@@ -1373,15 +1373,15 @@ textarea {
   .container-people{
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .about-us-description{
-    padding-bottom: 2%;
+    padding-bottom: 5%;
   }
 
   .about-us-description p{
     margin: 8.5%;
     margin-top: 4%;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .photo-form svg {
@@ -1392,8 +1392,7 @@ textarea {
 
 @media (min-width: 780px){
   
-
-
+ 
   .photo-form:hover > div {
     background-color: rgba(0,0,0,0.85);
   }
@@ -1471,6 +1470,9 @@ textarea {
 
 
 @media (max-width: 768px){
+  .about-us-description {
+    padding-bottom: 1%;
+}
 
   .about-us-photo{
     padding:30%;
@@ -1522,7 +1524,9 @@ textarea {
 
 @media (max-width: 576px){
 
-
+  .about-us-description {
+    padding-bottom: 4%;
+}
   .container-people{
     grid-template-columns: 1fr;
     margin-top: 6%;
