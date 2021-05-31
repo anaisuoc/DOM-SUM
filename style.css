@@ -1242,10 +1242,7 @@ nav ul li a:active{
   border-radius: 4px;
 }
 
-.container-people > div:hover{
- transform: translateY(-5px);
 
-}
 
 .container-people > div > div{
   background-color: rgba(25,25,25,0.9);
@@ -1468,7 +1465,9 @@ textarea {
     transform: translateY(0%);
     opacity:1;
   }
-}
+}.container-people > div:hover{
+  transform: translateY(-5px);
+ }
 }
 @media (max-width: 768px){
 
@@ -1523,7 +1522,6 @@ textarea {
 
 @media (max-width: 576px){
 
- 
 
   .container-people{
     grid-template-columns: 1fr;
