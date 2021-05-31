@@ -1362,9 +1362,7 @@ textarea {
     padding-top: 1%;
   }
 
-  .container-people > div{
-    margin-bottom: 6%;
-  }
+  
 
   .container-people > div:nth-child(1),
   .container-people > div:nth-child(3){
@@ -1385,7 +1383,7 @@ textarea {
   .about-us-description p{
     margin: 8.5%;
     margin-top: 4%;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .photo-form svg {
@@ -1465,9 +1463,12 @@ textarea {
     transform: translateY(0%);
     opacity:1;
   }
-}.container-people > div:hover{
-  transform: translateY(-5px);
- }
+}
+@media (min-width: 768px){
+.container-people > div {
+  margin-bottom: 6%;
+}}
+
 }
 @media (max-width: 768px){
 
@@ -1488,7 +1489,6 @@ textarea {
  
   .container-people > div{
     min-height: 390px;
-    margin-bottom: 6%;
   }
 
   .container-people > div:nth-child(1),
@@ -1539,6 +1539,7 @@ textarea {
 
   .container-people > div{
     background-color: #161616;
+    margin-bottom:6%;
   }
 
   .container-people > div:hover {
