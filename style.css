@@ -1553,7 +1553,9 @@ textarea {
     position: relative;
     display:block;
   }
-
+  .container-people > div > div p {
+    padding-bottom: 0;
+  }
   .container-about-us,
   .container-form{
     flex-direction: column;
