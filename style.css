@@ -57,10 +57,12 @@
 body{
   background-color: black;
 }
-h1, h2, h3, h4, h5, h5, ul, li, a, p, figcaption{
+h1, h2, h3, h4, h5, h5{
   font-family: "Open sans",sans-serif;
 }
-
+ul, li, a, p, figcaption{
+  font: 400 15px/1.5 "Open sans",sans-serif;
+}
 .body-white{
   background-color: white;
 }
@@ -697,15 +699,14 @@ nav ul li a:active{
 /* main detalles de una receta*/
 
 /*banner*/
-.banner-recipe picture{
- 
-  height: calc(44vh + 66px);
-}
+
 .banner-recipe{
   display: flex;
   justify-content: center;
   align-items: center;
   animation: banner-recipe-anim 1s ease-in-out 0s 1;
+  height: calc(44vh + 66px);
+
 }
 
 @keyframes banner-recipe-anim{
@@ -919,16 +920,7 @@ nav ul li a:active{
     height: calc(35vh + 66px);
   }
 
-  @keyframes banner-recipe-anim{
-    from{
-      
-      opacity:0;
-    }
-    to{
-      height: calc(35vh + 66px);
-      opacity:1;
-    }
-  }
+
 
   .banner-recipe > div{
     padding-left: 6%;
@@ -1054,16 +1046,7 @@ nav ul li a:active{
     height: calc(35vh + 66px);
   }
 
-  @keyframes banner-recipe-anim{
-    from{
-      height: calc(29vh + 66px);
-      opacity:0;
-    }
-    to{
-      height: calc(35vh + 66px);
-      opacity:1;
-    }
-  }
+
 
   .banner-recipe > div{
   padding: 7%;
