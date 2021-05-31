@@ -531,15 +531,15 @@ nav ul li a:active{
   }
 
   @keyframes container-path-anim{
-    0% {margin-left: 0;}
-    23% {margin-left: 0;}
-    25% {margin-left: -100%;}
-    48% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    73% {margin-left: -200%;}
-    75% {margin-left: -100%;}
-    98% {margin-left: -100%;}
-    100% {margin-left: 0;}
+    0% {transform: translateX(-200%);}
+    23% {transform: translateX(-200%);}
+    25% {transform: translateX(-100%);}
+    48% {transform: translateX(-100%);}
+    50% {transform: translateX(0);}
+    73% {transform: translateX(0);}
+    75% {transform: translateX(-100%);}
+    98% {transform: translateX(-100%);}
+    100% {transform: translateX(-200%);}
   }
 
   .meet-us-index{ 
