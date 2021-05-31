@@ -1212,7 +1212,7 @@ nav ul li a:active{
 }
 
 .about-us-description p{
-  margin: 5% 8% 6%;
+  margin: 5%;
   font-size: 0.9rem;
 }
 
@@ -1378,11 +1378,7 @@ textarea {
     padding-bottom: 5%;
   }
 
-  .about-us-description p{
-    margin: 8.5%;
-    margin-top: 4%;
-    font-size: 0.9rem;
-  }
+
 
   .photo-form svg {
     width:20vw;
@@ -1446,8 +1442,6 @@ textarea {
 
   .about-us-description p{
     font-size: 1rem;
-    margin: 6%;
-    margin-top: 4.5%;
   } 
 }
 
@@ -1525,7 +1519,7 @@ textarea {
 @media (max-width: 576px){
 
   .about-us-description {
-    padding-bottom: 4%;
+    padding-bottom: 3%;
 }
   .container-people{
     grid-template-columns: 1fr;
@@ -1568,11 +1562,6 @@ textarea {
     height: 14%;
   }
 
-  .about-us-description p {
-    margin-bottom: 5%;
-    margin-top: 6%;
-    font-size: 0.9rem;
-}
 }
 
 @media (max-width: 780px) and (-webkit-min-device-pixel-ratio: 1)
