@@ -1138,7 +1138,19 @@ nav ul li a:active{
   background-position: center;
   background-repeat: no-repeat;
 }
+.about-us-photo  {
+  animation: about-us-photo-back  1s ease-in-out 0s 1;
 
+}
+@keyframes about-us-photo-back{
+  from{
+    opacity:0;
+  }
+  to{
+
+    opacity:1;  
+  }
+}
 .about-us-photo > div,
 .photo-form > div {
   background-color: rgba(0,0,0,0.9);
