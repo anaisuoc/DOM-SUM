@@ -568,15 +568,7 @@ nav ul li a:active{
     width: 8%;
   }
 
-  nav a div p{
-    font-size: 1.1rem;
-  }
-
-  nav a div p::before {
-    margin-left: 1px;
-    margin-right: 7px;
-  }
-
+  
   .logo-index div {
     min-width: 75%;
   }
