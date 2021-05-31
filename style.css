@@ -416,6 +416,7 @@ nav ul li a:active{
 
   .container-clip-path{
     height:85vh;
+
   }
 
   .container-clip-path .box-clip-path{
@@ -427,17 +428,14 @@ nav ul li a:active{
 
   .container-clip-path .box-clip-path:nth-child(1) {
     clip-path: polygon(0 0, 33% 0, 33% 100%, 0% 100%);
-    background-color:black;
   }
 
   .container-clip-path .box-clip-path:nth-child(2) {
     clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
-    background-color:black;
   }
 
   .container-clip-path .box-clip-path:nth-child(3) {
     clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
-    background-color:black;
   }
 
   .container-clip-path .box-clip-path:hover {
@@ -470,9 +468,8 @@ nav ul li a:active{
   } 
 
   .container-clip-path .box-clip-path:hover picture{
-    opacity: 0.75;
-  }
-
+    filter: brightness(80%);  }
+  
   .container-clip-path .content-box-clip-path{
     padding: 2% 2% 2% 5%;
     margin: 2% 2% 3% 0%;
@@ -485,9 +482,6 @@ nav ul li a:active{
     max-width: 33vw;
   }
 
-  .container-clip-path .box-clip-path.active .content-box-clip-path{
-    opacity:1;
-  }
 
   .container-clip-path .content-box-clip-path .fas{
     display: flex;
@@ -1858,6 +1852,8 @@ footer > div{
 
   .footer-right {
     float: none;
+    padding-bottom: 4%;
+
   }
 }
 
