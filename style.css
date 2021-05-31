@@ -534,15 +534,15 @@ nav ul li a:active{
   }
 
   @keyframes container-path-anim{
-    0% {transform: translateX(-200%);}
-    23% {transform: translateX(-200%);}
+    0% {transform: translateX(0);}
+    23% {transform: translateX(0);}
     25% {transform: translateX(-100%);}
     48% {transform: translateX(-100%);}
-    50% {transform: translateX(0);}
-    73% {transform: translateX(0);}
+    50% {transform: translateX(-200%);}
+    73% {transform: translateX(-200%);}
     75% {transform: translateX(-100%);}
     98% {transform: translateX(-100%);}
-    100% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
   }
 
   .meet-us-index{ 
