@@ -216,7 +216,7 @@ nav ul li a:active{
 
   nav ul li{
     display: block;
-    margin: 40px 0;
+    margin: 26px 0;
     line-height: 2rem;
     border-bottom: 2px solid rgba(160,160,160,0.3);
     padding-bottom: 20px;
@@ -612,10 +612,10 @@ nav ul li a:active{
 
 .card-recipe{
   border-radius: 4px;
-  padding-bottom: 9%;
   animation: card-recipe-anim 1s ease-in-out 0s 1 forwards;
   margin-top: 6%;
   background-color: rgb(25, 25, 25);
+  height: 500px;
 
 }
 
@@ -1810,7 +1810,6 @@ footer > div{
 
 .footer-right {
   float: right;   
-  line-height: 4.55rem;
   color: white;
 }
 
@@ -1826,6 +1825,7 @@ footer > div{
   border-radius: 6px;
   margin-left: 9px;
   transition: transform 0.3s;
+  margin-top:15.5px;
 }
 
 .footer-right a:hover{
