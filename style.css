@@ -1157,7 +1157,7 @@ nav ul li a:active{
   background-color: rgba(0,0,0,0.9);
   color: white;
 }
-.about-us-description, .about-us-photo, .form-fields, .photo-form {
+.about-us-description, .form-fields, .photo-form {
   min-width: 50vw;
 }
 .about-us-photo > div {
