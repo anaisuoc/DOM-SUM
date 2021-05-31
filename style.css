@@ -1229,7 +1229,8 @@ nav ul li a:active{
 
 .container-people > div{
   min-height:365px;
-  text-align: center;
+  text-align: center;  
+  margin-bottom: 6%;
 }
 
 .container-people img{
@@ -1469,12 +1470,6 @@ textarea {
  }}
 
 
-@media (min-width: 768px){
-.container-people > div {
-  margin-bottom: 6%;
-}
-
-}
 @media (max-width: 768px){
 
   .about-us-photo{
@@ -1544,7 +1539,6 @@ textarea {
 
   .container-people > div{
     background-color: #161616;
-    margin-bottom:6%;
   }
 
   .container-people > div:hover {
