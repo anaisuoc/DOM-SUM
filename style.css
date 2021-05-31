@@ -1188,9 +1188,7 @@ nav ul li a:active{
 #hora-bangkok{
   font-size: 2rem;
 }
-.about-us-description{
-  padding-bottom: 0.5%;
-}
+
 .about-us-description img {
   width: 71%;
   margin-top: 2%;
@@ -1374,9 +1372,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-us-description{
-    padding-bottom: 5%;
-  }
+  
 
 
 
@@ -1424,7 +1420,10 @@ textarea {
     }
   }
 }
-
+@media (max-width: 1050px) and (min-width: 68px){
+  .about-us-description{
+    padding-bottom: 4%;
+  } }
 @media (max-width: 768px) and (min-width: 576px){
 
   .container-about-us,
@@ -1464,9 +1463,7 @@ textarea {
 
 
 @media (max-width: 768px){
-  .about-us-description {
-    padding-bottom: 1%;
-}
+
 
   .about-us-photo{
     padding:30%;
@@ -1518,9 +1515,7 @@ textarea {
 
 @media (max-width: 576px){
 
-  .about-us-description {
-    padding-bottom: 3%;
-}
+ 
   .container-people{
     grid-template-columns: 1fr;
     margin-top: 6%;
