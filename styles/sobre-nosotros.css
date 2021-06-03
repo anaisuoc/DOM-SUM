@@ -694,7 +694,7 @@ textarea {
 @media (max-width: 780px) and (-webkit-min-device-pixel-ratio: 1)
 {
   .about-us-photo {
-    background-image: url(img/sobre-nosotros-780.jpg);
+    background-image: url(../img/sobre-nosotros-780.jpg);
   }
 }
 
@@ -702,7 +702,7 @@ textarea {
 (max-width: 780px) and (-webkit-min-device-pixel-ratio: 2)
 {
   .about-us-photo {
-    background-image: url(img/sobre-nosotros-780-x2.jpg);
+    background-image: url(../img/sobre-nosotros-780-x2.jpg);
   }
 }
 
@@ -710,7 +710,7 @@ textarea {
 (min-width: 780px) and (-webkit-min-device-pixel-ratio: 1)
 {
     .about-us-photo {
-        background-image: url(img/sobre-nosotros-840.jpg);
+        background-image: url(../img/sobre-nosotros-840.jpg);
     }
 }
 
@@ -718,19 +718,19 @@ textarea {
 (min-width: 780px) and (-webkit-min-device-pixel-ratio: 2)
 {
     .about-us-photo {
-        background-image: url(img/sobre-nosotros-840-x2.jpg);
+        background-image: url(../img/sobre-nosotros-840-x2.jpg);
     }
 }
 
 .photo-form {
-    background-image: url(img/contacto-840.jpg);
+    background-image: url(../img/contacto-840.jpg);
 }
 
 @media
 (-webkit-min-device-pixel-ratio: 2)
 {
     .photo-form {
-        background-image: url(img/contacto-840-x2.jpg);
+        background-image: url(../img/contacto-840-x2.jpg);
     }
 }
 
