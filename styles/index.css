@@ -27,10 +27,7 @@
        url('../fonts/open-sans-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v20-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-ul::before {
-  content: "\f8cc";
-  font-family: " Font Awesome 5 Free ";
-  }
+
 *{
   padding: 0;
   margin: 0;
@@ -675,3 +672,9 @@ footer > div{
     line-height: 2rem;
   }
 }
+
+
+.footer-left ul li::before {
+  content: "\f8cc";
+  font-family: " Font Awesome 5 Free ";
+  }
