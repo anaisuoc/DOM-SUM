@@ -673,8 +673,3 @@ footer > div{
   }
 }
 
-
-.footer-left ul li::before {
-  content: "\f8cc";
-  font-family: " Font Awesome 5 Free ";
-  }
