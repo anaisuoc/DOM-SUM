@@ -42,7 +42,6 @@
        url('../fonts/open-sans-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v20-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-
 *{
   padding: 0;
   margin: 0;
