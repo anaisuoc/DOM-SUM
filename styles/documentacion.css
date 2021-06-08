@@ -214,11 +214,19 @@ nav ul li a:active{
 }
 
 @media (max-width: 576px){
-
+  nav a .logo {
+    display: none;
+}
   nav a .logo-reduce {
     display: inline;
   }
+
+  nav a img {
+    height: 25px;
+    width: 8%;
+  }
 }
+
 
 
 /* main documentacion */
