@@ -307,7 +307,6 @@ nav ul li a:active{
 .logo-index div a:hover {
   background-color: rgba(160,160,160,0.6);
   color: #F8F8F8;
-  transform: translateY(-1px);
 }
 
 .logo-index div a:active{
