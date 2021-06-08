@@ -296,7 +296,6 @@ nav ul li a:active{
   font-weight: 300;
   font-size: 1.2rem;
   padding: 9px 11px;
-  text-transform: uppercase;
   border-radius: 4px;
   margin-top: 8%;
   margin-bottom: 3%;
@@ -346,7 +345,6 @@ nav ul li a:active{
 .meet-us-index a{
   color: white;
   padding: 16px;
-  text-transform: uppercase;
   border-radius: 4px;
   position: absolute;
   background-color: rgba(0,0,0,1);
