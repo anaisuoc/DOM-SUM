@@ -128,7 +128,6 @@ nav ul li{
   line-height: 4.1rem;
   margin: 0 8px;
   font-size: 0.88rem;
-  text-transform: uppercase;
 
 
 }
@@ -347,6 +346,7 @@ nav ul li a:active{
 .meet-us-index a{
   color: white;
   padding: 16px;
+  text-transform: uppercase;
   border-radius: 4px;
   position: absolute;
   background-color: rgba(0,0,0,1);
