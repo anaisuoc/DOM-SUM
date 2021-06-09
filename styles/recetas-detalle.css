@@ -22,12 +22,15 @@
 body{
   background-color: black;
 }
+
 h1, h2, h3, h4, h5, h5{
   font-family: "Open sans",sans-serif;
 }
+
 ul, li, a, p, figcaption{
   font: 400 15px/1.5 "Open sans",sans-serif;
 }
+
 .body-white{
   background-color: white;
 }
@@ -91,8 +94,6 @@ nav ul li{
   margin: 0 8px;
   font-size: 0.88rem;
   text-transform: uppercase;
-
-
 }
 
 nav ul li a{
@@ -122,7 +123,6 @@ nav ul li a:active{
   background-color: transparent;
   cursor: pointer;
   border: none;
-
 }
 
 .menu-ham span{
@@ -142,8 +142,8 @@ nav ul li a:active{
 
 .br-2.animation{
   opacity: 0; 
-
 }
+
 .br-3.animation{
   transform: rotate(45deg) translate(-5px, -7.8px);
   transition: 0.4s;
@@ -165,7 +165,6 @@ nav ul li a:active{
     left: 5.5%;
   }
 
-  
   nav ul {
     position: fixed;
     width: 100%;
@@ -174,7 +173,7 @@ nav ul li a:active{
     left: -100%;
     text-align: center;
     transition: all .5s;
-}
+  }
 
   nav ul.show{
     background-color: rgba(25,25,25,0.95);
@@ -184,7 +183,6 @@ nav ul li a:active{
   nav ul li{
     line-height: 2rem;
     text-align: center;
-
     display: block;
     margin: 26px 0;
     border-bottom: 2px solid rgba(160,160,160,0.3);
@@ -195,12 +193,12 @@ nav ul li a:active{
     font-size: 1rem;
     opacity: 1;
   }
-}
+}   
 
 @media (max-width: 576px){
   nav a .logo {
     display: none;
-}
+  }
   nav a .logo-reduce {
     display: inline;
   }
@@ -211,10 +209,7 @@ nav ul li a:active{
   }
 }
 
-
-
 /* main detalles de una receta*/
-
 /*banner*/
 
 .banner-recipe{
@@ -223,7 +218,6 @@ nav ul li a:active{
   align-items: center;
   animation: banner-recipe-anim 1s ease-in-out 0s 1;
   height: calc(44vh + 66px);
-
 }
 
 @keyframes banner-recipe-anim{
@@ -270,7 +264,6 @@ nav ul li a:active{
   font-weight: 400;
   font-size: 2.4rem;
   margin-right: 60px;
-
 }
 
 .banner-recipe > div > div{
@@ -460,8 +453,6 @@ nav ul li a:active{
     height: calc(35vh + 66px);
   }
 
-
-
   .banner-recipe > div{
     padding-left: 6%;
     padding-right: 6%;
@@ -524,7 +515,6 @@ nav ul li a:active{
 }
 
 @media (max-width: 768px) { 
-
   .banner-recipe > div {
     min-width: 55vw;
   }
@@ -585,9 +575,7 @@ nav ul li a:active{
   .banner-recipe {
     height: calc(35vh + 66px);
   }
-
-
-
+  
   .banner-recipe > div{
   padding: 7%;
   }

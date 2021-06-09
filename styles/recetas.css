@@ -42,6 +42,7 @@
        url('../fonts/open-sans-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v20-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
+
 *{
   padding: 0;
   margin: 0;
@@ -51,12 +52,15 @@
 body{
   background-color: black;
 }
+
 h1, h2, h3, h4, h5, h5{
   font-family: "Open sans",sans-serif;
 }
+
 ul, li, a, p, figcaption{
   font: 400 15px/1.5 "Open sans",sans-serif;
 }
+
 .body-white{
   background-color: white;
 }
@@ -101,9 +105,7 @@ nav a div p{
   font-size: 1.1rem;
   color: white;
   margin-left: 8px;
-
 }
-
 
 nav a div:hover{
   opacity: 0.5;
@@ -120,8 +122,6 @@ nav ul li{
   margin: 0 8px;
   font-size: 0.88rem;
   text-transform: uppercase;
-
-
 }
 
 nav ul li a{
@@ -151,7 +151,6 @@ nav ul li a:active{
   background-color: transparent;
   cursor: pointer;
   border: none;
-
 }
 
 .menu-ham span{
@@ -193,7 +192,6 @@ nav ul li a:active{
   nav a img{
     left: 5.5%;
   }
-
   
   nav ul {
     position: fixed;
@@ -203,7 +201,7 @@ nav ul li a:active{
     left: -100%;
     text-align: center;
     transition: all .5s;
-}
+  }
 
   nav ul.show{
     background-color: rgba(25,25,25,0.95);
@@ -213,7 +211,6 @@ nav ul li a:active{
   nav ul li{
     line-height: 2rem;
     text-align: center;
-
     display: block;
     margin: 26px 0;
     border-bottom: 2px solid rgba(160,160,160,0.3);
@@ -229,7 +226,8 @@ nav ul li a:active{
 @media (max-width: 576px){
   nav a .logo {
     display: none;
-}
+  }
+
   nav a .logo-reduce {
     display: inline;
   }
@@ -260,7 +258,6 @@ nav ul li a:active{
   margin-top: 6%;
   background-color: rgb(25, 25, 25);
   height: 500px;
-
 }
 
 @keyframes card-recipe-anim{
@@ -434,7 +431,6 @@ footer > div{
   .footer-right {
     float: none;
     padding-bottom: 4%;
-
   }
 }
 
