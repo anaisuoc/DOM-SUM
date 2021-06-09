@@ -430,9 +430,12 @@ nav ul li a:active{
   .container-clip-path .box-clip-path.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  .container-clip-path .box-clip-path.active .content-box-clip-path{
-opacity:1;  }
 
+  .container-clip-path .box-clip-path.active .content-box-clip-path{
+    opacity:1; 
+    transition:transform 0.3s;
+  }
+  
   .container-clip-path .box-clip-path:nth-child(1) .tittle-clip-path,
   .container-clip-path .box-clip-path:nth-child(3) .tittle-clip-path{
     width: 33vw;
