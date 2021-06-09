@@ -433,7 +433,7 @@ nav ul li a:active{
 
   .container-clip-path .box-clip-path.active .content-box-clip-path{
     opacity:1; 
-    transition:transform 0.3s;
+    transition: all 1.5s ease-in-out;
   }
   
   .container-clip-path .box-clip-path:nth-child(1) .tittle-clip-path,
