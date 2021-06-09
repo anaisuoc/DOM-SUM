@@ -257,7 +257,8 @@ nav ul li a:active{
   animation: card-recipe-anim 1s ease-in-out 0s 1 forwards;
   margin-top: 6%;
   background-color: rgb(25, 25, 25);
-  height: 500px;
+  display:flex;
+  flex-direction: column;
 }
 
 @keyframes card-recipe-anim{
@@ -272,7 +273,7 @@ nav ul li a:active{
 }
 
 .card-recipe img{
-  height: 59%;
+  height: 60%;
   object-fit: cover;
   width: 100%;
   border-top-right-radius: 4px;
@@ -300,6 +301,7 @@ nav ul li a:active{
   text-transform: uppercase;
   background-color: black;
   opacity: 0.9;
+  margin: 0 30% 5% 30%;
 }
 
 .card-link:hover{
@@ -331,6 +333,9 @@ nav ul li a:active{
   .card-recipe p{
     font-size: 0.95rem;
   } 
+  .card-link{
+    margin: 0 15% 5% 15%;
+  }
 }
 
 @media (max-width: 576px){
