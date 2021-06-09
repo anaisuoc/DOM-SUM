@@ -333,9 +333,6 @@ nav ul li a:active{
   .card-recipe p{
     font-size: 0.95rem;
   } 
-  .card-link{
-    margin: 0 15% 5% 15%;
-  }
 }
 
 @media (max-width: 576px){
