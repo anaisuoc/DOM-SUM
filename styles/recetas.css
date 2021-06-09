@@ -272,7 +272,7 @@ nav ul li a:active{
 }
 
 .card-recipe img{
-  height: 60%;
+  height: 59%;
   object-fit: cover;
   width: 100%;
   border-top-right-radius: 4px;
@@ -286,7 +286,7 @@ nav ul li a:active{
 }
 
 .card-recipe p{
-  padding: 3.5% 7% 9%;
+  padding: 3.5% 7% 7%;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -300,7 +300,6 @@ nav ul li a:active{
   text-transform: uppercase;
   background-color: black;
   opacity: 0.9;
-  margin-bottom: 9%;
 }
 
 .card-link:hover{
