@@ -173,6 +173,7 @@ nav ul li a:active{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    font-size: 1rem;
   }
 
   nav ul.show{
@@ -190,7 +191,6 @@ nav ul li a:active{
   }
 
   nav ul li a{
-    font-size: 1rem;
     opacity: 1;
   }
 }   
@@ -391,12 +391,11 @@ nav ul li a:active{
 
 .recomendations-object > div {
   width: 22vw;
-  height: 270px;
   background-color: rgba(25,25,25,0.2);
   display: flex;
   justify-content: center;
-  align-items: end;
   position: absolute;
+  bottom: 0;
 }
 
 .recomendations-object > div a{
@@ -418,10 +417,11 @@ nav ul li a:active{
 
 .recomendations-object > img{
   width: 22vw;
-  height: 270px;
   border-radius: 4px;
   object-fit: cover;
+  height: 35vh;
 }
+
 .card-link{
   color: white;
   border-radius: 4px;
@@ -566,7 +566,6 @@ nav ul li a:active{
   .recomendations-object > div,
   .recomendations-object > img {
     width: 40vw;
-    height: 330px;
   }
 }
 
@@ -639,7 +638,6 @@ nav ul li a:active{
 /* footer */
 footer{
   background: rgb(25,25,25);
-  min-height: 66px;
   width: 100vw;
 }
 

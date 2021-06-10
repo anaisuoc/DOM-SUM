@@ -186,6 +186,7 @@ nav ul li a:active{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    font-size: 1rem;
   }
 
   nav ul.show{
@@ -203,7 +204,6 @@ nav ul li a:active{
   }
 
   nav ul li a{
-    font-size: 1rem;
     opacity: 1;
   }
 }
@@ -373,7 +373,6 @@ nav ul li a:active{
 /* footer */
 footer{
   background: rgb(25,25,25);
-  min-height: 66px;
   width: 100vw;
 }
 
