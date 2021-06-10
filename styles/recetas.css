@@ -305,9 +305,9 @@ nav ul li a:active{
 }
 
 .card-link:hover{
-  background-color: rgba(160,160,160,0.3);
+  background-color: #414242;
   opacity: 1;
-  border: 0;
+  border: 1px solid #414242;
 }
 
 .card-link:active{
