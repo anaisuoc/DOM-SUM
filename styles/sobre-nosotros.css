@@ -100,13 +100,13 @@ nav a div:hover{
 nav ul{
   float: right;
   margin-right: 3%;
+  font-size: 0.88rem;
 }
 
 nav ul li{
   display: inline-block;
   line-height: 4.1rem;
   margin: 0 8px;
-  font-size: 0.88rem;
   text-transform: uppercase;
 }
 
@@ -187,6 +187,7 @@ nav ul li a:active{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    font-size: 1rem;
   }
 
   nav ul.show{
@@ -204,7 +205,6 @@ nav ul li a:active{
   }
 
   nav ul li a{
-    font-size: 1rem;
     opacity: 1;
   }
 }
